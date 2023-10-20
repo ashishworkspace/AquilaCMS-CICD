@@ -16,6 +16,7 @@ metadata:
 spec:
   selector:
     app: aquila-cms
+  type: NodePort
   ports:
   - port: 3010
     targetPort: 3010
