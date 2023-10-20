@@ -21,3 +21,25 @@ spec:
         ports:
         - containerPort: 27017
 ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aquila-cms
+spec:
+  selector:
+    matchLabels:
+      app: aquila-cms
+  template:
+    metadata:
+      labels:
+        app: aquila-cms
+    spec:
+      containers:
+      - name: aquila-cms
+        image: ashishizofficial/aquilacms:image-tag
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3010
