@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - aquila
+
+  aquila:
+    image: aquilacms/aquilacms
+    container_name: aquila
+    ports:
+      - "3010:3010"
+    networks:
+      - aquila
+
+networks:
+  aquila:
+    driver: bridge
