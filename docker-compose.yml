@@ -10,7 +10,7 @@ services:
       - aquila
 
   aquila:
-    image: aquilacms/aquilacms
+    image: ashishizofficial/aquilacms:image-tag
     container_name: aquila
     ports:
       - "3010:3010"
