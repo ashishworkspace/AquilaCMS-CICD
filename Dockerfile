@@ -13,7 +13,7 @@ RUN dnf install ./wkhtmltox-0.12.6-1.centos8.x86_64.rpm -y
 RUN npm install -g yarn
 RUN yarn install
 
-RUN https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox-0.12.6.1-2.almalinux9.x86_64.rpm && \ 
+RUN wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox-0.12.6.1-2.almalinux9.x86_64.rpm && \ 
     yum install wkhtmltox-0.12.6.1-2.almalinux9.x86_64.rpm -y
 
 CMD ["npm", "start"]
