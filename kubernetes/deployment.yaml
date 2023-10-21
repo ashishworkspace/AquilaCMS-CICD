@@ -16,8 +16,8 @@ spec:
         image: mongo
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "500m"
+            memory: "512Mi"
+            cpu: "700m"
         ports:
         - containerPort: 27017
 ---
@@ -39,7 +39,7 @@ spec:
         image: ashishizofficial/aquilacms:image-tag
         resources:
           limits:
-            memory: "300Mi"
-            cpu: "500m"
+            memory: "512Mi"
+            cpu: "700m"
         ports:
         - containerPort: 3010
