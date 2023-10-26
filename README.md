@@ -14,7 +14,7 @@ The ***Open Source***, ***100% JavaScript*** and ***"all in one"*** ecommerce so
 
 ![AquilaCMS](https://www.aquila-cms.com/medias/aquila-landing.gif)
 
-## Server configuration #
+## Server configuration 
 
 To install the latest AquilaCMS, you need :
 
